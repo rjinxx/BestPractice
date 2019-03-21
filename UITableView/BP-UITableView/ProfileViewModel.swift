@@ -239,11 +239,11 @@ extension ProfileViewModel: HeaderViewDelegate {
         var item = items[section]
         
         if item.isCollapsible {
-            // Toggle collapse
+            // toggle collapse
             let collapsed = !item.isCollapsed
             item.isCollapsed = collapsed
             header.setCollapsed(collapsed: collapsed)
-            // Adjust the number of the rows inside the section
+            // adjust the number of the rows inside the section
             reloadSections?(section)
         }
     }

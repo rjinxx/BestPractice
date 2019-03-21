@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940DF13A2243D8A000B2EA17 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940DF1382243D8A000B2EA17 /* HeaderView.swift */; };
+		940DF13D2243E00200B2EA17 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 940DF13C2243E00200B2EA17 /* HeaderView.xib */; };
 		947A20FD2243155900F4BF09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A20FC2243155900F4BF09 /* AppDelegate.swift */; };
 		947A20FF2243155900F4BF09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A20FE2243155900F4BF09 /* ViewController.swift */; };
 		947A21022243155900F4BF09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947A21002243155900F4BF09 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		940DF1382243D8A000B2EA17 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		940DF13C2243E00200B2EA17 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		947A20F92243155900F4BF09 /* BP-UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BP-UITableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		947A20FC2243155900F4BF09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947A20FE2243155900F4BF09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 				947A21182243944F00F4BF09 /* AttributeCell.swift */,
 				947A211A2243945D00F4BF09 /* EmailCell.swift */,
 				947A211E22439C8900F4BF09 /* ProfileViewModel.swift */,
+				940DF1382243D8A000B2EA17 /* HeaderView.swift */,
+				940DF13C2243E00200B2EA17 /* HeaderView.xib */,
 			);
 			path = "BP-UITableView";
 			sourceTree = "<group>";
@@ -150,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				947A210F2243160700F4BF09 /* ServerData.json in Resources */,
+				940DF13D2243E00200B2EA17 /* HeaderView.xib in Resources */,
 				947A21072243155A00F4BF09 /* LaunchScreen.storyboard in Resources */,
 				947A21042243155A00F4BF09 /* Assets.xcassets in Resources */,
 				947A21022243155900F4BF09 /* Main.storyboard in Resources */,
@@ -170,6 +177,7 @@
 				947A211F22439C8900F4BF09 /* ProfileViewModel.swift in Sources */,
 				947A20FF2243155900F4BF09 /* ViewController.swift in Sources */,
 				947A21152243942900F4BF09 /* AboutCell.swift in Sources */,
+				940DF13A2243D8A000B2EA17 /* HeaderView.swift in Sources */,
 				947A20FD2243155900F4BF09 /* AppDelegate.swift in Sources */,
 				947A21192243944F00F4BF09 /* AttributeCell.swift in Sources */,
 				947A21132243931800F4BF09 /* BestPractice.swift in Sources */,

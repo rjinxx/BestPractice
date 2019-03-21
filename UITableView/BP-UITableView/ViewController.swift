@@ -17,10 +17,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        viewModel.reloadSections = { [weak self] (section: Int) in
+            self?.tableView?.beginUpdates()
+            self?.tableView?.reloadSections([section], with: .fade)
+            self?.tableView?.endUpdates()
+        }
+
         tableView.dataSource = viewModel
+        tableView.delegate = viewModel
         
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableView.automaticDimension
+        tableView?.register(HeaderView.nib, forHeaderFooterViewReuseIdentifier: HeaderView.identifier)
     }
 }
 

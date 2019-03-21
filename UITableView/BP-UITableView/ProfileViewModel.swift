@@ -21,6 +21,8 @@ protocol ProfileViewModelItem {
     var type: ProfileViewModelItemType { get }
     var sectionTitle: String { get }
     var rowCount: Int { get }
+    var isCollapsible: Bool { get }
+    var isCollapsed: Bool { get set }
 }
 
 extension ProfileViewModelItem {
@@ -28,12 +30,16 @@ extension ProfileViewModelItem {
     var rowCount: Int {
         return 1
     }
+    var isCollapsible: Bool {
+        return true
+    }
 }
 
 class ProfileViewModel: NSObject {
     
     var items = [ProfileViewModelItem]()
-    
+    var reloadSections: ((_ section: Int) -> Void)?
+
     override init() {
         
         super.init()
@@ -71,10 +77,10 @@ class ProfileViewModelNamePictureItem: ProfileViewModelItem {
     var type: ProfileViewModelItemType {
         return .nameAndPicture
     }
-    
     var sectionTitle: String {
         return "Main Info"
     }
+    var isCollapsed = true
     
     var name: String
     var pictureUrl: String
@@ -90,11 +96,11 @@ class ProfileViewModelAboutItem: ProfileViewModelItem {
     var type: ProfileViewModelItemType {
         return .about
     }
-    
     var sectionTitle: String {
         return "About"
     }
-    
+    var isCollapsed = true
+
     var about: String
     
     init(about: String) {
@@ -107,15 +113,14 @@ class ProfileViewModeFriendsItem: ProfileViewModelItem {
     var type: ProfileViewModelItemType {
         return .friend
     }
-    
     var sectionTitle: String {
         return "Friends"
     }
-    
     var rowCount: Int {
         return friends.count
     }
-    
+    var isCollapsed = true
+
     var friends: [Friend]
     
     init(friends: [Friend]) {
@@ -128,15 +133,14 @@ class ProfileViewModeAttributeItem: ProfileViewModelItem {
     var type: ProfileViewModelItemType {
         return .attribute
     }
-    
     var sectionTitle: String {
         return "Attributes"
     }
-    
     var rowCount: Int {
         return attributes.count
     }
-    
+    var isCollapsed = true
+
     var attributes: [Attribute]
     
     init(attributes: [Attribute]) {
@@ -149,11 +153,11 @@ class ProfileViewModelEmailItem: ProfileViewModelItem {
     var type: ProfileViewModelItemType {
         return .email
     }
-    
     var sectionTitle: String {
         return "Email"
     }
-        
+    var isCollapsed = true
+
     var email: String
     
     init(email: String) {
@@ -168,7 +172,10 @@ extension ProfileViewModel: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items[section].rowCount
+        
+        let item = items[section]
+        
+        return item.isCollapsible && item.isCollapsed ? 0 : item.rowCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -204,9 +211,40 @@ extension ProfileViewModel: UITableViewDataSource {
             }
         }
         return UITableViewCell()
-    }
+    }    
+}
+
+extension ProfileViewModel: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return items[section].sectionTitle
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        if let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeaderView.identifier) as? HeaderView {
+
+            let item = items[section]
+            
+            headerView.item = item
+            headerView.section = section
+            headerView.delegate = self
+            
+            return headerView
+        }
+        return UIView()
+    }
+}
+
+extension ProfileViewModel: HeaderViewDelegate {
+    
+    func toggleSection(header: HeaderView, section: Int) {
+        
+        var item = items[section]
+        
+        if item.isCollapsible {
+            // Toggle collapse
+            let collapsed = !item.isCollapsed
+            item.isCollapsed = collapsed
+            header.setCollapsed(collapsed: collapsed)
+            // Adjust the number of the rows inside the section
+            reloadSections?(section)
+        }
     }
 }

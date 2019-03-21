@@ -21,7 +21,7 @@ class HeaderView: UITableViewHeaderFooterView {
 
     var section: Int = 0
 
-    static var nib:UINib {
+    static var nib: UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
     

@@ -13,6 +13,14 @@
 		947A21042243155A00F4BF09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947A21032243155A00F4BF09 /* Assets.xcassets */; };
 		947A21072243155A00F4BF09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947A21052243155A00F4BF09 /* LaunchScreen.storyboard */; };
 		947A210F2243160700F4BF09 /* ServerData.json in Resources */ = {isa = PBXBuildFile; fileRef = 947A210E2243160700F4BF09 /* ServerData.json */; };
+		947A2111224392FE00F4BF09 /* NamePictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A2110224392FE00F4BF09 /* NamePictureCell.swift */; };
+		947A21132243931800F4BF09 /* BestPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A21122243931800F4BF09 /* BestPractice.swift */; };
+		947A21152243942900F4BF09 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A21142243942900F4BF09 /* AboutCell.swift */; };
+		947A21172243943D00F4BF09 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A21162243943D00F4BF09 /* FriendCell.swift */; };
+		947A21192243944F00F4BF09 /* AttributeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A21182243944F00F4BF09 /* AttributeCell.swift */; };
+		947A211B2243945D00F4BF09 /* EmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A211A2243945D00F4BF09 /* EmailCell.swift */; };
+		947A211D22439A2A00F4BF09 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A211C22439A2A00F4BF09 /* ProfileModel.swift */; };
+		947A211F22439C8900F4BF09 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A211E22439C8900F4BF09 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		947A21062243155A00F4BF09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947A21082243155A00F4BF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		947A210E2243160700F4BF09 /* ServerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServerData.json; sourceTree = "<group>"; };
+		947A2110224392FE00F4BF09 /* NamePictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePictureCell.swift; sourceTree = "<group>"; };
+		947A21122243931800F4BF09 /* BestPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestPractice.swift; sourceTree = "<group>"; };
+		947A21142243942900F4BF09 /* AboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
+		947A21162243943D00F4BF09 /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		947A21182243944F00F4BF09 /* AttributeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeCell.swift; sourceTree = "<group>"; };
+		947A211A2243945D00F4BF09 /* EmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailCell.swift; sourceTree = "<group>"; };
+		947A211C22439A2A00F4BF09 /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		947A211E22439C8900F4BF09 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				947A20FB2243155900F4BF09 /* BP-UITableView */,
+				947A21122243931800F4BF09 /* BestPractice.swift */,
 				947A20FA2243155900F4BF09 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +73,7 @@
 		947A20FB2243155900F4BF09 /* BP-UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				947A211C22439A2A00F4BF09 /* ProfileModel.swift */,
 				947A210E2243160700F4BF09 /* ServerData.json */,
 				947A20FC2243155900F4BF09 /* AppDelegate.swift */,
 				947A20FE2243155900F4BF09 /* ViewController.swift */,
@@ -63,6 +81,12 @@
 				947A21032243155A00F4BF09 /* Assets.xcassets */,
 				947A21052243155A00F4BF09 /* LaunchScreen.storyboard */,
 				947A21082243155A00F4BF09 /* Info.plist */,
+				947A2110224392FE00F4BF09 /* NamePictureCell.swift */,
+				947A21142243942900F4BF09 /* AboutCell.swift */,
+				947A21162243943D00F4BF09 /* FriendCell.swift */,
+				947A21182243944F00F4BF09 /* AttributeCell.swift */,
+				947A211A2243945D00F4BF09 /* EmailCell.swift */,
+				947A211E22439C8900F4BF09 /* ProfileViewModel.swift */,
 			);
 			path = "BP-UITableView";
 			sourceTree = "<group>";
@@ -139,8 +163,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				947A211D22439A2A00F4BF09 /* ProfileModel.swift in Sources */,
+				947A2111224392FE00F4BF09 /* NamePictureCell.swift in Sources */,
+				947A21172243943D00F4BF09 /* FriendCell.swift in Sources */,
+				947A211B2243945D00F4BF09 /* EmailCell.swift in Sources */,
+				947A211F22439C8900F4BF09 /* ProfileViewModel.swift in Sources */,
 				947A20FF2243155900F4BF09 /* ViewController.swift in Sources */,
+				947A21152243942900F4BF09 /* AboutCell.swift in Sources */,
 				947A20FD2243155900F4BF09 /* AppDelegate.swift in Sources */,
+				947A21192243944F00F4BF09 /* AttributeCell.swift in Sources */,
+				947A21132243931800F4BF09 /* BestPractice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

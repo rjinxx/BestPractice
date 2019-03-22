@@ -27,10 +27,9 @@ class ViewController: UIViewController {
         tableView.delegate = viewModel
         
         tableView.estimatedRowHeight = 100
-        tableView.estimatedSectionHeaderHeight = 70
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.sectionHeaderHeight = UITableView.automaticDimension
-        tableView?.register(HeaderView.nib, forHeaderFooterViewReuseIdentifier: HeaderView.identifier)
+        tableView.sectionHeaderHeight = 60
+        tableView.register(HeaderView.nib, forHeaderFooterViewReuseIdentifier: HeaderView.identifier)
     }
 }
 

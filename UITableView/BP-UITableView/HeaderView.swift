@@ -66,6 +66,7 @@ extension UIView {
         animation.isRemovedOnCompletion = false
         animation.fillMode = CAMediaTimingFillMode.forwards
         
-        self.layer.add(animation, forKey: nil)
+        layer.transform = CATransform3DMakeRotation(toValue, 0.0, 0.0, 1.0)
+        layer.add(animation, forKey: nil)
     }
 }

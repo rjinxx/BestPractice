@@ -20,7 +20,6 @@ class SelectViewController: UIViewController {
         // Do any additional setup after loading the view.
         tableView?.estimatedRowHeight = 100
         tableView?.rowHeight = UITableView.automaticDimension
-        tableView?.allowsMultipleSelection = true
         tableView?.dataSource = viewModel
         tableView?.delegate = viewModel
 

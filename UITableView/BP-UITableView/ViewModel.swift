@@ -59,14 +59,10 @@ extension ViewModel: UITableViewDataSource {
             cell.item = items[indexPath.row]
             
             // select/deselect the cell
-            if items[indexPath.row].isSelected {
-                if !cell.isSelected {
-                    tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
-                }
-            } else {
-                if cell.isSelected {
-                    tableView.deselectRow(at: indexPath, animated: false)
-                }
+            if items[indexPath.row].isSelected, !cell.isSelected {
+                tableView.selectRow(at: indexPath, animated: false, scrollPosition: .none)
+            } else if cell.isSelected {
+                tableView.deselectRow(at: indexPath, animated: false)
             }
             return cell
         }

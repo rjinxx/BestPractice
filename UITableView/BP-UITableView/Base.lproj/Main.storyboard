@@ -253,6 +253,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="disabled">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                </state>
                                 <connections>
                                     <action selector="next:" destination="R1c-TZ-DiJ" eventType="touchUpInside" id="Bbc-CI-uII"/>
                                 </connections>

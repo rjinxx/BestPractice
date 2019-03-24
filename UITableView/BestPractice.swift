@@ -7,3 +7,4 @@
 //
 
 // 用cellModel配置cell, 用viewModel配置tableView
+// https://medium.com/ios-os-x-development/ios-multiple-selections-in-table-view-88dc2249c3a2

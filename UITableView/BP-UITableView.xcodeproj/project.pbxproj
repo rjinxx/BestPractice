@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940DF14422476DFD00B2EA17 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940DF14322476DFD00B2EA17 /* SelectViewController.swift */; };
+		940DF14622476E9B00B2EA17 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940DF14522476E9B00B2EA17 /* CustomCell.swift */; };
+		940DF14822476FA500B2EA17 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940DF14722476FA500B2EA17 /* Model.swift */; };
+		940DF14A22476FD000B2EA17 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940DF14922476FD000B2EA17 /* ViewModel.swift */; };
 		947A20FD2243155900F4BF09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A20FC2243155900F4BF09 /* AppDelegate.swift */; };
 		947A20FF2243155900F4BF09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A20FE2243155900F4BF09 /* ViewController.swift */; };
 		947A21022243155900F4BF09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947A21002243155900F4BF09 /* Main.storyboard */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		940DF14322476DFD00B2EA17 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		940DF14522476E9B00B2EA17 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		940DF14722476FA500B2EA17 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		940DF14922476FD000B2EA17 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		947A20F92243155900F4BF09 /* BP-UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BP-UITableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		947A20FC2243155900F4BF09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947A20FE2243155900F4BF09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +95,10 @@
 				947A21182243944F00F4BF09 /* AttributeCell.swift */,
 				947A211A2243945D00F4BF09 /* EmailCell.swift */,
 				947A211E22439C8900F4BF09 /* ProfileViewModel.swift */,
+				940DF14322476DFD00B2EA17 /* SelectViewController.swift */,
+				940DF14522476E9B00B2EA17 /* CustomCell.swift */,
+				940DF14722476FA500B2EA17 /* Model.swift */,
+				940DF14922476FD000B2EA17 /* ViewModel.swift */,
 			);
 			path = "BP-UITableView";
 			sourceTree = "<group>";
@@ -169,9 +181,13 @@
 				947A211B2243945D00F4BF09 /* EmailCell.swift in Sources */,
 				947A211F22439C8900F4BF09 /* ProfileViewModel.swift in Sources */,
 				947A20FF2243155900F4BF09 /* ViewController.swift in Sources */,
+				940DF14A22476FD000B2EA17 /* ViewModel.swift in Sources */,
+				940DF14822476FA500B2EA17 /* Model.swift in Sources */,
 				947A21152243942900F4BF09 /* AboutCell.swift in Sources */,
 				947A20FD2243155900F4BF09 /* AppDelegate.swift in Sources */,
 				947A21192243944F00F4BF09 /* AttributeCell.swift in Sources */,
+				940DF14422476DFD00B2EA17 /* SelectViewController.swift in Sources */,
+				940DF14622476E9B00B2EA17 /* CustomCell.swift in Sources */,
 				947A21132243931800F4BF09 /* BestPractice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

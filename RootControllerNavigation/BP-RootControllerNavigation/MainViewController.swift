@@ -32,9 +32,9 @@ class MainViewController: UIViewController {
         AppDelegate.shared.rootViewController.switchToLogout()
     }
     
-    @objc func showActivityScreen(animated: Bool = true) {
+    @objc func showActivityScreen(/*animated: Bool = true*/) {
         if let activityViewController = ActivityViewController.storyboardInstance() {
-            navigationController?.pushViewController(activityViewController, animated: animated)
+            navigationController?.pushViewController(activityViewController, animated: true)
         }
     }
 

@@ -17,10 +17,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        viewModel.delegate = self
+
         tableView.dataSource = viewModel
-        
         tableView.estimatedRowHeight = 100
         tableView.rowHeight = UITableView.automaticDimension
+        
+        viewModel.loadData()
+    }
+    
+    @IBAction func refreshData(_ sender: UIBarButtonItem) {
+        viewModel.loadUpdateData()
     }
 }
+
+extension ViewController: ProfileViewModelDelegate {
+    
+    func didFinishUpdates() {
+        tableView?.reloadData()
+    }
+}
+
 

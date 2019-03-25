@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--BP-TableView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BP_UITableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -189,7 +189,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="7Fe-eM-I39"/>
+                    <navigationItem key="navigationItem" title="BP-TableView" id="7Fe-eM-I39">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="maf-cA-Gsw">
+                            <connections>
+                                <action selector="refreshData:" destination="BYZ-38-t0r" id="q32-QH-IEY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="jgK-La-0qV" id="qgi-ea-SaP"/>
                     </connections>

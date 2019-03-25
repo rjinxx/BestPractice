@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		940DF14C2247C43A00B2EA17 /* ServerData.json in Resources */ = {isa = PBXBuildFile; fileRef = 940DF14B2247C43A00B2EA17 /* ServerData.json */; };
 		947A20FD2243155900F4BF09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A20FC2243155900F4BF09 /* AppDelegate.swift */; };
 		947A20FF2243155900F4BF09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A20FE2243155900F4BF09 /* ViewController.swift */; };
 		947A21022243155900F4BF09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947A21002243155900F4BF09 /* Main.storyboard */; };
 		947A21042243155A00F4BF09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947A21032243155A00F4BF09 /* Assets.xcassets */; };
 		947A21072243155A00F4BF09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947A21052243155A00F4BF09 /* LaunchScreen.storyboard */; };
-		947A210F2243160700F4BF09 /* ServerData.json in Resources */ = {isa = PBXBuildFile; fileRef = 947A210E2243160700F4BF09 /* ServerData.json */; };
+		947A210F2243160700F4BF09 /* ServerData_New.json in Resources */ = {isa = PBXBuildFile; fileRef = 947A210E2243160700F4BF09 /* ServerData_New.json */; };
 		947A2111224392FE00F4BF09 /* NamePictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A2110224392FE00F4BF09 /* NamePictureCell.swift */; };
 		947A21132243931800F4BF09 /* BestPractice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A21122243931800F4BF09 /* BestPractice.swift */; };
 		947A21152243942900F4BF09 /* AboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947A21142243942900F4BF09 /* AboutCell.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		940DF14B2247C43A00B2EA17 /* ServerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServerData.json; sourceTree = "<group>"; };
 		947A20F92243155900F4BF09 /* BP-UITableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BP-UITableView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		947A20FC2243155900F4BF09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947A20FE2243155900F4BF09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,7 +33,7 @@
 		947A21032243155A00F4BF09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		947A21062243155A00F4BF09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947A21082243155A00F4BF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		947A210E2243160700F4BF09 /* ServerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServerData.json; sourceTree = "<group>"; };
+		947A210E2243160700F4BF09 /* ServerData_New.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServerData_New.json; sourceTree = "<group>"; };
 		947A2110224392FE00F4BF09 /* NamePictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePictureCell.swift; sourceTree = "<group>"; };
 		947A21122243931800F4BF09 /* BestPractice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestPractice.swift; sourceTree = "<group>"; };
 		947A21142243942900F4BF09 /* AboutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutCell.swift; sourceTree = "<group>"; };
@@ -74,7 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				947A211C22439A2A00F4BF09 /* ProfileModel.swift */,
-				947A210E2243160700F4BF09 /* ServerData.json */,
+				947A210E2243160700F4BF09 /* ServerData_New.json */,
+				940DF14B2247C43A00B2EA17 /* ServerData.json */,
 				947A20FC2243155900F4BF09 /* AppDelegate.swift */,
 				947A20FE2243155900F4BF09 /* ViewController.swift */,
 				947A21002243155900F4BF09 /* Main.storyboard */,
@@ -149,10 +152,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				947A210F2243160700F4BF09 /* ServerData.json in Resources */,
+				947A210F2243160700F4BF09 /* ServerData_New.json in Resources */,
 				947A21072243155A00F4BF09 /* LaunchScreen.storyboard in Resources */,
 				947A21042243155A00F4BF09 /* Assets.xcassets in Resources */,
 				947A21022243155900F4BF09 /* Main.storyboard in Resources */,
+				940DF14C2247C43A00B2EA17 /* ServerData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

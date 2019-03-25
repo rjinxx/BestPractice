@@ -30,17 +30,33 @@ extension ProfileViewModelItem {
     }
 }
 
+protocol ProfileViewModelDelegate: class {
+    func didFinishUpdates()
+}
+
 class ProfileViewModel: NSObject {
     
     var items = [ProfileViewModelItem]()
     
-    override init() {
-        
-        super.init()
-        
+    weak var delegate: ProfileViewModelDelegate?
+    
+    func loadData() {
         guard let data = dataFromFile("ServerData"), let profile = Profile(data: data) else {
             return
         }
+        loadServerData(profile)
+    }
+    
+    func loadUpdateData() {
+        guard let data = dataFromFile("ServerData_New"), let profile = Profile(data: data) else {
+            return
+        }
+        loadServerData(profile)
+    }
+    
+    private func loadServerData(_ profile: Profile) {
+        
+        items.removeAll()
         
         if let name = profile.fullName, let pictureUrl = profile.pictureUrl {
             items.append(ProfileViewModelNamePictureItem(name: name, pictureUrl: pictureUrl))
@@ -63,6 +79,8 @@ class ProfileViewModel: NSObject {
         if !profile.friends.isEmpty {
             items.append(ProfileViewModeFriendsItem(friends: friends))
         }
+        
+        delegate?.didFinishUpdates()
     }
 }
 
